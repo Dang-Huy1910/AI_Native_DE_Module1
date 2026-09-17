@@ -35,4 +35,5 @@ Từ Buổi 6:
 ```bash
 docker compose up -d mock-api
 ```
-# AI_Native_DE_Module1
+## Reflection
+- **Session 01:** [docs/reflection_01.md](docs/reflection_01.md)

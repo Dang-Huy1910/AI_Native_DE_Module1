@@ -1,0 +1,39 @@
+=== BATCH RUNNER EXECUTION LOG ===
+Command: python scripts/run_file_pipeline.py
+
+2026-10-08 17:24:21,950 | INFO | file_pipeline | === START FILE PIPELINE ===
+2026-10-08 17:24:21,950 | INFO | file_pipeline | Input dir: /home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/incremental/day_2026-07-01
+2026-10-08 17:24:21,950 | INFO | file_pipeline | Staging dir: /home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging
+2026-10-08 17:24:21,950 | INFO | file_pipeline | start dataset=customers_daily file=customers_daily.csv
+2026-10-08 17:24:21,954 | INFO | file_pipeline | profile dataset=customers_daily.csv rows=100 missing=0 duplicates=0
+2026-10-08 17:24:21,963 | INFO | file_pipeline | success dataset=customers_daily.csv rows_in=100 rows_out=100 output=/home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging/customers_clean.csv
+2026-10-08 17:24:21,964 | INFO | file_pipeline | start dataset=products_daily file=products_daily.csv
+2026-10-08 17:24:21,966 | INFO | file_pipeline | profile dataset=products_daily.csv rows=50 missing=0 duplicates=0
+2026-10-08 17:24:21,972 | INFO | file_pipeline | success dataset=products_daily.csv rows_in=50 rows_out=50 output=/home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging/products_clean.csv
+2026-10-08 17:24:21,973 | INFO | file_pipeline | start dataset=orders_daily file=orders_daily.csv
+2026-10-08 17:24:21,977 | INFO | file_pipeline | profile dataset=orders_daily.csv rows=600 missing=0 duplicates=0
+2026-10-08 17:24:22,006 | INFO | file_pipeline | success dataset=orders_daily.csv rows_in=600 rows_out=600 output=/home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging/orders_clean.csv
+2026-10-08 17:24:22,006 | INFO | file_pipeline | start dataset=order_items_daily file=order_items_daily.csv
+2026-10-08 17:24:22,012 | INFO | file_pipeline | profile dataset=order_items_daily.csv rows=1533 missing=0 duplicates=0
+2026-10-08 17:24:22,043 | INFO | file_pipeline | success dataset=order_items_daily.csv rows_in=1533 rows_out=1533 output=/home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging/order_items_clean.csv
+2026-10-08 17:24:22,044 | INFO | file_pipeline | start dataset=payments_daily file=payments_daily.json
+2026-10-08 17:24:22,047 | INFO | file_pipeline | profile dataset=payments_daily.json rows=536 missing=0 duplicates=0
+2026-10-08 17:24:22,069 | INFO | file_pipeline | success dataset=payments_daily.json rows_in=536 rows_out=536 output=/home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/data/staging/payments_clean.csv
+2026-10-08 17:24:22,069 | INFO | file_pipeline | === FILE PIPELINE SUCCESS ===
+
+=== DATA STAGING DIRECTORY TREE & ROW COUNTS ===
+customers_clean.csv       rows=100    cols=12
+products_clean.csv        rows=50     cols=11
+orders_clean.csv          rows=600    cols=11
+order_items_clean.csv     rows=1533   cols=10
+payments_clean.csv        rows=536    cols=10
+
+Total 5 clean files generated in data/staging/
+
+=== RAW SOURCE INVARIANT VERIFICATION ===
+-rw-r--r-- 1 huydqhe182408 huydqhe182408  14K Sep 15 07:59 customers_daily.csv
+-rw-r--r-- 1 huydqhe182408 huydqhe182408 179K Sep 15 07:59 order_items_daily.csv
+-rw-r--r-- 1 huydqhe182408 huydqhe182408  88K Sep 15 07:59 orders_daily.csv
+-rw-r--r-- 1 huydqhe182408 huydqhe182408 180K Sep 15 07:59 payments_daily.json
+-rw-r--r-- 1 huydqhe182408 huydqhe182408 6.4K Sep 15 07:59 products_daily.csv
+Raw input files remain 100% untouched and unchanged.

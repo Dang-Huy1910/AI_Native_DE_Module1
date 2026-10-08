@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.2, pluggy-1.6.0 -- /home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/huydqhe182408/Data Engineering/AI_Native_DE_Module1_Student_Pack_v3_Speaker_Notes
+plugins: anyio-4.15.1
+collecting ... collected 8 items
+
+tests/test_extract.py::test_read_csv_success PASSED                      [ 12%]
+tests/test_extract.py::test_read_json_nested_data PASSED                 [ 25%]
+tests/test_extract.py::test_read_file_not_found PASSED                   [ 37%]
+tests/test_extract.py::test_unsupported_file_extension PASSED            [ 50%]
+tests/test_extract.py::test_profile_metrics PASSED                       [ 62%]
+tests/test_transform.py::test_normalize_raw_immutability PASSED          [ 75%]
+tests/test_transform.py::test_normalize_strings_and_enums PASSED         [ 87%]
+tests/test_transform.py::test_normalize_numeric_and_datetime PASSED      [100%]
+
+============================== 8 passed in 0.27s ===============================
